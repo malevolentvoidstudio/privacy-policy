@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy — Battery Charge Alarm and Heat Detector</title>
+<style>
+  :root {
+    --bg: #0b0e1f;
+    --bg-card: #12163a;
+    --text: #e8eaf6;
+    --text-dim: #a8aecb;
+    --accent: #6fa8ff;
+    --rule: #262b52;
+    --radius: 14px;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f6f7fb;
+      --bg-card: #ffffff;
+      --text: #171a2c;
+      --text-dim: #565d7d;
+      --accent: #2a5fd6;
+      --rule: #e2e4f0;
+    }
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 20px 80px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  .eyebrow {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: clamp(28px, 5vw, 38px);
+    line-height: 1.2;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+  }
+  .meta {
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 19px;
+    margin: 40px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  p, li {
+    font-size: 16px;
+    color: var(--text);
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin: 18px 0;
+  }
+  .label {
+    font-weight: 600;
+    color: var(--text);
+  }
+  .dim { color: var(--text-dim); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 44px 0 30px;
+  }
+  footer {
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 15px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th { color: var(--text-dim); font-weight: 600; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Privacy Policy</div>
+    <h1>Battery Charge Alarm and Heat Detector</h1>
+    <div class="meta">Last updated: September 26, 2026</div>
+  </header>
+
+  <p>This policy explains what data the Battery Charge Alarm and Heat Detector app ("the app") collects, why, and how it's handled. The app is built to run almost entirely on your device — most of what it does never leaves your phone.</p>
+
+  <h2>What stays on your device</h2>
+  <p>The following information is read and stored locally on your phone only. It is never sent to us or to any server we control:</p>
+  <ul>
+    <li>Battery charge level, temperature, and charging status, read from your device's battery sensors while the app is monitoring.</li>
+    <li>Your chosen alarm target percentage, custom ringtone selections, and theft alarm settings.</li>
+    <li>Charging history — a local log of past charge sessions, stored only on your device.</li>
+    <li>Battery health, capacity, and type information, read directly from your device.</li>
+  </ul>
+  <p>None of the above is transmitted anywhere. If you uninstall the app, this data is deleted along with it.</p>
+
+  <h2>What we do collect</h2>
+  <div class="card">
+    <p class="label">Feedback you choose to submit</p>
+    <p class="dim">If you use the in-app feedback form, the message you write is sent to our contact email through a third-party form-relay service (Web3Forms). We only receive what you type — nothing else about your device is attached to it.</p>
+  </div>
+  <div class="card">
+    <p class="label">Advertising data (via Google AdMob)</p>
+    <p class="dim">The app shows ads using Google AdMob. AdMob may collect an advertising identifier and other data to serve and measure ads, in line with Google's own privacy practices. We do not receive or store this data ourselves — it is handled directly between your device and Google. See Google's policy below for details on what AdMob collects.</p>
+  </div>
+
+  <h2>Camera use for the Theft Alarm feature (optional)</h2>
+  <div class="card">
+    <p class="label">What it does</p>
+    <p class="dim">If you turn on the Theft Alarm and separately choose to enable photo capture, the app will use your device's front-facing camera to take a short series of up to three photos — spaced a few seconds apart — at the moment a theft alert is triggered (i.e. when the charger is unplugged unexpectedly before your target battery level is reached). This happens automatically, without opening a camera preview, so you will not see a viewfinder when it happens.</p>
+  </div>
+  <div class="card">
+    <p class="label">Why it's handled this way</p>
+    <p class="dim">The purpose of this feature is to help identify who may have disconnected your charging device without permission. A visible camera preview would defeat that purpose, so the capture happens in the background while the alarm itself is sounding on screen.</p>
+  </div>
+  <div class="card">
+    <p class="label">Where the photos go</p>
+    <p class="dim">Photos are saved only to private storage inside the app on your own device — the same private storage area other apps cannot access. They are never uploaded to us, to any server, or to any third party. You can view them at any time from the app's Security Photos screen, and delete individual photos or clear all of them whenever you choose. The app also automatically removes the oldest photos once a reasonable number have built up, so storage doesn't grow indefinitely.</p>
+  </div>
+  <div class="card">
+    <p class="label">Your control over this</p>
+    <p class="dim">This feature is off by default. It only activates if you (1) turn on Theft Alarm and (2) separately tap "Enable Photo Capture" and grant camera permission when asked. You can revoke camera permission at any time in your device's app settings, which disables this feature entirely.</p>
+  </div>
+
+  <h2>Permissions the app uses, and why</h2>
+  <table>
+    <tr><th>Permission</th><th>Why it's needed</th></tr>
+    <tr><td>Foreground service</td><td>Keeps battery monitoring running reliably while charging, with a visible notification so you know it's active.</td></tr>
+    <tr><td>Notifications</td><td>Shows the charge-status notification and the alarm alert when your target is reached.</td></tr>
+    <tr><td>Full-screen intent</td><td>Lets the alarm screen appear even if your phone is locked, similar to a normal alarm clock.</td></tr>
+    <tr><td>Battery optimization exemption</td><td>Optional — helps prevent some phones from killing the background alarm before it can trigger.</td></tr>
+    <tr><td>Biometric / device credential</td><td>Used only to confirm your identity when dismissing a theft alarm. Your fingerprint or PIN is verified by your device's own security system — the app never sees or stores it.</td></tr>
+    <tr><td>Camera</td><td>Optional. Only used if you enable the Theft Alarm photo capture feature, described above. Not used for anything else in the app.</td></tr>
+    <tr><td>Internet</td><td>Needed to show ads and to send feedback you submit.</td></tr>
+  </table>
+
+  <h2>Children's privacy</h2>
+  <p>This app is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Charging history and local settings can be cleared at any time by uninstalling the app.</li>
+    <li>You can decline notification, biometric, or battery optimization permissions in your device settings — some features (like the theft alarm lock or full-screen alerts) may not work as intended without them.</li>
+    <li>For ad personalization controls, see your device's ad settings or Google's own tools linked below.</li>
+  </ul>
+
+  <h2>Third-party services</h2>
+  <p>The app relies on these third-party services, each with its own privacy policy:</p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob / Google Privacy Policy</a></li>
+    <li><a href="https://web3forms.com/privacy" target="_blank" rel="noopener">Web3Forms (feedback form relay)</a></li>
+  </ul>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the "last updated" date at the top of this page will change accordingly. Continued use of the app after an update means you accept the revised policy.</p>
+
+  <hr>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or your data can be sent to <a href="mailto:lgera2778@gmail.com">lgera2778@gmail.com</a>, or through the Feedback option inside the app.</p>
+
+  <footer>© 2026 Battery Charge Alarm and Heat Detector</footer>
+
+</div>
+</body>
+</html>
